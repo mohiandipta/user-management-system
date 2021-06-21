@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
 
-:root{
+:root {
     --dark: #2b2d42;
     --white: #ffff;
     --light: #adb5bd;
@@ -17,7 +17,7 @@
 a {
     text-decoration: none;
     font-family: 'Noto Sans JP',
-    sans-serif;
+        sans-serif;
 }
 
 .container {
@@ -30,7 +30,7 @@ a {
     font-weight: bold;
 }
 
-.d-flex{
+.d-flex {
     display: flex;
     flex-wrap: wrap;
 }
@@ -46,7 +46,7 @@ a {
 .border-shadow {
     border: 1px solid var(--border-btn);
     box-shadow: 1px 3px 10px #d1d1d1;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .text-white {
@@ -57,7 +57,7 @@ a {
     display: inline-block;
 }
 
-.text-light{
+.text-light {
     color: var(--light);
 }
 
@@ -74,21 +74,22 @@ a {
     width: 100%;
 }
 
-#site-main{
+#site-main {
     margin-top: 6em;
     font-family: 'Noto Sans JP',
-    sans-serif;
+        sans-serif;
 }
 
-#site-main .container .box-nav > a {
+#site-main .container .box-nav>a {
     font-size: 1em;
     padding: .5em 1em;
 }
+
 #site-main .container .box-nav>a:hover {
     box-shadow: inset 1px 3px 10px rgba(0, 0, 0, 0.075);
 }
 
-.table td> a.btn {
+.table td>a.btn {
     background-color: white;
     font-size: 1em;
     padding: .3em .4em;
@@ -99,11 +100,11 @@ a {
     margin: 2em 0em;
 }
 
-table{
+table {
     border-spacing: 0px;
     width: 100%;
-    box-shadow:  1px 3px 10px rgba(0, 0, 0, 0.13);
-    border-radius: 10px;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.13);
+    border-radius: 5px;
 }
 
 .table th {
@@ -122,10 +123,32 @@ table{
     border-top: 2px solid var(--border);
 }
 
-.table tr:hover{
+.table tr:hover {
     background-color: #6066e0;
 }
 
-.table tr:hover td >a {
+.table tr:hover td>a {
     box-shadow: none;
+}
+
+@media only screen and (max-width:1024px) {
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    tr {
+        border: 1px solid var(--border);
+    }
+
+    td {
+        border: none;
+        position: relative;
+    }
+
 }
