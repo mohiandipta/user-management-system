@@ -38,6 +38,9 @@ app.get('/update-user', (req, res) => {
     res.render('update_user')
 })
 
+//load router
+app.use('/', require('./server/routes/router'))
+
 
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`)
