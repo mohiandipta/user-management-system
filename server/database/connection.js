@@ -1,8 +1,8 @@
 
-let mongoose = require('mongoose')
+const mongoose = require('mongoose')
 
 
-let connectDB = async () => {
+const connentDB = async () => {
     try {
         const con = await mongoose.connect(process.env.CONNECTION_STRING, {
             useNewUrlParser: true,
@@ -10,11 +10,12 @@ let connectDB = async () => {
             useFindAndModify: false,
             useCreateIndex: true
         })
-        console.log(`MongoDB Connected: ${con.connection.host}`)
+
+        console.log(`MongoDB connected: ${con.connection.host}`)
     } catch (error) {
         console.log(error)
         process.exit(1)
     }
 }
 
-module.exports = connectDB
+module.exports = connentDB
