@@ -124,7 +124,7 @@ table {
 }
 
 .table tr:hover {
-    background-color: #6066e0;
+    background-color: #6fbcdf;
 }
 
 .table tr:hover td>a {
@@ -184,12 +184,32 @@ table {
     border-radius: 5px;
 }
 
+#add_user .form-group input[type='text'] {
+    width: 100%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid var(--border);
+    font-family: 'Borlow', sans-serif;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
 #update_user .form-group .radio {
     margin: 1em 2em;
     display: contents;
 }
 
+#add_user .form-group .radio {
+    margin: 1em 2em;
+    display: contents;
+}
+
 #update_user .form-group .radio {
+    margin-top: 1em;
+    display: contents;
+}
+
+#add_user .form-group .radio {
     margin-top: 1em;
     display: contents;
 }
