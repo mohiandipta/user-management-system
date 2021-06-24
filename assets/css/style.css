@@ -124,7 +124,8 @@ table {
 }
 
 .table tr:hover {
-    background-color: #6fbcdf;
+    background-color: #93d7f7;
+    transition: background-color 900ms ease 100ms;
 }
 
 .table tr:hover td>a {
