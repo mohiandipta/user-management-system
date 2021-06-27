@@ -20,7 +20,7 @@ exports.create = (req, res) => {
     if (!user) {
         console.log('the user can not be created')
     }
-    res.send(user);
+    res.redirect('/add-user');
 }
 
 
